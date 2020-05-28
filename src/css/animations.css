@@ -1,0 +1,15 @@
+.to-do-enter {
+  transition: all 0.5s;
+  transform: translateX(-120%);
+}
+.to-do-enter.to-do-enter-active {
+  transform: translateX(0);
+}
+
+.to-do-exit {
+  transition: all 0.5s;
+  transform: translateX(0);
+}
+.to-do-exit.to-do-exit-active {
+  transform: translateX(120%);
+}
