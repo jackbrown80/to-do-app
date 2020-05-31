@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <div className="to-do-wrapper">
-        <h2 className="app-title">TO DO APP</h2>
+        <h2 className="app-title">TO DO LIST</h2>
         <AddToDo updateTodos={updateTodos} />
         <TransitionGroup component="ul">
           {Object.keys(todos).map((key) => (
