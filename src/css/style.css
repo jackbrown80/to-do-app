@@ -5,6 +5,7 @@
 }
 body {
   font-family: 'Francois One', sans-serif;
+  overflow-y: scroll;
 }
 .app {
   min-height: 100vh;
@@ -16,16 +17,17 @@ body {
   margin-right: 0 !important;
 }
 .to-do-wrapper {
-  width: 40%;
+  width: 30%;
   min-width: 350px;
   min-height: 400px;
-  height: 70vh;
+  height: 100%;
   background-color: #119da4;
   border-radius: 30px;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 10px 20px;
-  margin: 20px;
+  margin: 40px 0;
+  box-sizing: content-box;
 }
 .to-do-item {
   background-color: #0a1826;
@@ -101,9 +103,6 @@ body {
   outline: none;
   cursor: pointer;
   margin-left: 10px;
-}
-.to-do-submit:hover {
-  transform: scale(1.05);
 }
 .to-do-submit:active {
   transform: scale(0.95);
